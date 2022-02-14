@@ -23,6 +23,30 @@
     border-radius:0;
     float: right;
 }
+.whats-app:hover {
+    background-color: #25d366;
+    color: #fff;
+    transform: scale(1.2);
+}
+.whats-app .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #fbaca5;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  right: 60px;
+  font-size:14pt;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.whats-app:hover .tooltiptext {
+  visibility: visible;
+}
      </style>
   
     </head>
@@ -157,8 +181,13 @@
     <span class="tooltiptext">هل تحتاج مساعدة؟</span>
     <i class="zmdi zmdi-whatsapp my-float"></i>
 </a>
-       
+<a  class="whats-app" href="https://api.whatsapp.com/send?phone=971507628040" target="_blank">
+  <span class="tooltiptext">هل تحتاج مساعدة؟</span>
+  <i class="zmdi zmdi-whatsapp my-float"></i>
+</a>
+
 <br><br><br>
+
 <footer class="footer" >
 <center><div class="container-fluid">
         <!-- Small boxes (Stat box) -->
