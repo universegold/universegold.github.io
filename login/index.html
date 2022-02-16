@@ -75,7 +75,7 @@
                         @csrf
                         <div class="row mb-3">
                      <div class="col-md-6 offset-md-3">
-                               <input  id="email" type="email" placeholder="البريد الإلكتروني"   class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus></f>
+                               <input  id="email" type="email" placeholder="البريد الإلكتروني"   class="form-control @error('email') is-invalid @enderror" name="email"  required autocomplete="email" autofocus></f>
                                @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
