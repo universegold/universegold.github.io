@@ -73,55 +73,53 @@
        </div>
    </nav>
   
-  <section>
-
+   <br>
+   <h1>
   
-            <h2>
            
-                    
-                 <div class="exempleserif"> <center><strong><font color="bronze">:هل نسيت كلمة المرور ؟ يمكنك تغييرها الأن : فقط أدخل بريدك الإلكتروني</font></strong></center></div>
-            
-            </h2>
-                        
-        <br>
-            
-                    <div class="card-body">
-                       @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
-    
-                        <form method="POST" action="{{ route('password.email') }}">
-                           
+        <div class="exempleserif"> <center><strong><font color="bronze">تسجيل الدخول</font></strong></center><div/>
+   
+ </h1>
+               
+<br>
+          <form method="POST" action="{{ route('password.update') }}">
                         @csrf
-                            <div class="row mb-3">
-                                
-                            <div class="col-md-6 offset-md-3">
-                                   <center> <input id="email" type="email" placeholder="البريد الإلكتروني" 
-                                   class="form-control" name="email" required autocomplete="email" autofocus>
-                                   </center>
-                                   
-                                </div>
-                            </div>
+
+                        <input type="hidden" name="token" value="{{ $token }}">
+
+                        <div class="row mb-3">
                         
-                            <div class="row mb-3">
-                                <div class="col-md-6 offset-md-3">
-                                    <center><button type="submit" class="btn btn-primary">
-                                     <font color="brown">إرسال رابط إعادة تعيين كلمة المرور</font>
-                                    </button></center>
-                                </div>
-                                <h4 class="mt-4">
-                           <a href="../../login" class="text-primary underline">
-                           <div class="exempleserif"> <strong><center> <font color="caramel"> تسجيل الدخول </font></center></strong></div></a> </h4>
+                            <div class="col-md-6">
+                            <input id="email" type="email" placeholder="البريد الإلكتروني" class="form-control" name="email" required autocomplete="email" autofocus>
+
+                            </div>
+                           
+                        </div>
+
+                        <div class="row mb-3">
+                          
+                            <div class="col-md-6">
+                                <input id="password" type="password" placeholder="كلمة المرور" class="form-control" name="password" required autocomplete="new-password">
+
+                            </div>
+                        </div>
+  
+                        <div class="row mb-3">
                        
-                       
-                        </form>
-                    </div>
-          
-                  </section>
-    
-                      
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" placeholder="تأكيد كلمة المرور" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            </div>
+                        </div>
+  
+                        <div class="row mb-0">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary">
+                                 <font color="brown">إعادة تعيين كلمة المرور</font>
+                                </button>
+                        
+                        </div>
+                    </form>
+              
                     <br><br>
         <footer class="footer text-faded text-center py-2">
             <div class="container">جميع الحقوق محفوظة   © 2022   <p class="m-0 small"></p></div>
