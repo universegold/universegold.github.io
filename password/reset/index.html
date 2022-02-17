@@ -75,7 +75,7 @@
   
   <section>
 
-  
+  <br>
             <h2>
            
                     
@@ -86,15 +86,11 @@
         <br>
             
                     <div class="card-body">
-                       @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
+                      
     
                         <form method="POST" action="{{ route('password.email') }}">
                            
-                        @csrf
+                    
                             <div class="row mb-3">
                                 
                             <div class="col-md-6 offset-md-3">
