@@ -73,15 +73,16 @@
        </div>
    </nav>
   
-
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header"><h6><center><font color="brown">إعادة تعيين كلمة المرور</font></center></h6></div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
+   <br>
+   <h1>
+  
+           
+        <div class="exempleserif"> <center><strong><font color="bronze">تسجيل الدخول</font></strong></center><div/>
+   
+ </h1>
+               
+<br>
+          <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
                         <input type="hidden" name="token" value="{{ $token }}">
