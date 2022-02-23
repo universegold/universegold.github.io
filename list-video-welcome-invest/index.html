@@ -87,9 +87,9 @@
            <div class="text-center  p-2 rounded">
              
               
-            <?php  @if($type==1) ?>
+            <?php  if($type==1) ?>
               <a href="https://universegold.github.io/list-video/<?php {{$video['id']}} ?>"> <img src="/public/assets/img/1.png"  controls width="350"  height="250"></a>
-              <?php @endif
+              <?php endif
             @if($type==2) ?>
             <a href="list-video/{{$video['id']}}"><img src="/public/assets/img/2.png"  controls width="350"  height="250"></a>
             <?php @endif
@@ -105,7 +105,7 @@
                        <h5> <span class="section-heading-upper"><font color="gold"> {{$video['nom']}} </font></span></h5>
                        
                       </h1>
-                        
+                      
               
       
       
@@ -113,7 +113,7 @@
 
         </div> 
         
-        @endforeach
+        <?php  @endforeach ?>
         
       </div>  
              
