@@ -176,12 +176,14 @@ a {
         <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
       
-        {{$video['nom']}}
+    <php    {{$video['nom']}}></php>
     
         <div class="row">
-          <?php foreach ($videos as $video) 
+          <?php 
+          
+          foreach ($videos as $video) 
         {
-   
+   ?>
            <div class="col-lg-3">
          
            
@@ -197,7 +199,7 @@ a {
                        <h5> <span class="section-heading-upper"><font color="gold"><?php {{$video['nom']}} ?></font></span></h5>
                        
                       </h1>
-                    }              
+                   <?php }              
               
       ?>
       
