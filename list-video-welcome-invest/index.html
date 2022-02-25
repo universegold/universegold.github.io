@@ -179,8 +179,8 @@ a {
         {{$video['nom']}}
     
         <div class="row">
-          <?php @foreach ($videos as $video) ?>
-        
+          <?php foreach ($videos as $video) 
+        {
    
            <div class="col-lg-3">
          
@@ -197,15 +197,15 @@ a {
                        <h5> <span class="section-heading-upper"><font color="gold"><?php {{$video['nom']}} ?></font></span></h5>
                        
                       </h1>
-                      
+                    }              
               
-      
+      ?>
       
         </div> 
 
         </div> 
         
-        <?php  @endforeach ?>
+     
         
       </div>  
              
