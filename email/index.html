@@ -164,15 +164,8 @@ color: brown;
    </nav>
   
    <br>
-   <h1>
   
-           
-        <div class="exempleserif"> <center><strong><font color="bronze">تسجيل الدخول</font></strong></center><div/>
-   
- </h1>
-               
-<br>
-          <form method="POST" action="{{ route('password.update') }}">
+     <form method="POST" action="{{ route('password.update') }}">
                         @csrf
 
                         <input type="hidden" name="token" value="{{ $token }}">
